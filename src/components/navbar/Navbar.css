@@ -1,0 +1,17 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.brand{
+    cursor: pointer;
+    margin-left: 100px;
+
+}
+
+.navButton{
+    margin-right: 100px;
+    animation: blink 1s step-start infinite;
+}
