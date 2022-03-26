@@ -1,3 +1,10 @@
 .view {
-    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.size{
+  
+    height: 300px;
+    width: 300px;
 }
