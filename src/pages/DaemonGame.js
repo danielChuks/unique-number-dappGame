@@ -1,12 +1,12 @@
 import React from "react";
-import CardList from "../components/gameValue/CardList";
+import Card from '../components/gameValue/Card'
 
 
-const DaemonGame = () => {
+const DaemonGame = ({IMAGES}) => {
     return(
         <>
             <div>
-                <CardList />
+                <Card />
             </div>
         </>
     )

@@ -1,16 +1,21 @@
 import React from 'react';
+import IMAGES from './images.js';
+import './Card.css'
 
 
-const Card = ({email, id, website}) =>{
+const Card = () =>{
     return (
-        <div className='tc bg-light-green dib br3 pa3 ma3 grow bw shadow-5'>
-            <img alt='photos' src ={`https://robohash.org/v${id}?200x200`} />
-            <div>
-                <h3>{email}</h3>
-                <p>{email}</p>
-                <p>{website}</p>
-            </div>
+        <div className='view'>
+         
+             {/* IMAGES && IMAGES.map((item) => 
+                 <div key={item.id}>
+                    <img src={item.image} className='' alt='display'/>  
+                 </div>
+             ) */}
+             <img src={IMAGES[0]} alt='dis' />
+         
         </div>
+        
     )
 }
 
