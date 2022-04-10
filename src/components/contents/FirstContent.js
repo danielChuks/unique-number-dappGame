@@ -5,7 +5,7 @@ import {Container, Row} from 'react-bootstrap';
 import image from './images/baner.jpg'
 import { Aminations } from '../designComponent/Amination';
 
-const More = () => {
+const HomeView = () => {
   return (
     <div >
         <Container className='Display'>
@@ -32,4 +32,4 @@ const More = () => {
 }
 
 
-export default More
+export default HomeView;

@@ -1,14 +1,13 @@
 import React from "react";
-// import Scroll from './components/Scroll';
-import More from "../components/content/FirstContent";
+import HomeView from "../components/contents/FirstContent";
 
 
 const HomePage = () => {
     return(
         <>
-         <More />
+         <HomeView />
         </>
-)
+    )
 }
 
 
