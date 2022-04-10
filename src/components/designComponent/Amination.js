@@ -30,7 +30,10 @@ export const Aminations = () => {
 
   return (
     <div>
-        <span><h3 className='text-dark text-uppercase blink-cursor'>{typeAmination}</h3> </span>{''}
+        <span>
+        <h3 className='text-dark text-uppercase blink-cursor'>      {typeAmination}
+        </h3> 
+        </span>{''}
     </div>
   )
 }
