@@ -4,7 +4,7 @@ const [isCards, GHOST, WITCH, MOUSE, PAWN] = makeEnum(4);
 
 const [isResults, KLAUS_WIN, DRAW, ELENA_WIN] = makeEnum(3);
 
-const winner = (cardsKlaus, cardsElena) =>{
+const winner = (cardsKlaus, cardsElena) => {
   if(cardsKlaus === GHOST && cardsElena === GHOST){
     return DRAW; // which is 1
   }
@@ -24,7 +24,7 @@ assert(winner(WITCH, GHOST) == ELENA_WIN);
 assert(winner(GHOST, PAWN) == KLAUS_WIN);
 assert(winner(PAWN, GHOST) == ELENA_WIN);
 assert(winner(MOUSE, PAWN) == DRAW);
-assert(winner(MOUSE, PAWN) == DRAW);
+assert(winner(PAWN, MOUSE) == DRAW);
 assert(winner(MOUSE, WITCH) == DRAW);
 assert(winner(PAWN,  WITCH) == DRAW);
 assert(winner(GHOST, GHOST) == DRAW);
@@ -85,7 +85,7 @@ export const main = Reach.App(() => {
 
   // While loop that only terminates after a player wins
   var result = DRAW;
-  invariant (balance() === 2 * wager);
+  invariant(balance() === 2 * wager);
   while (result === DRAW) {
       commit();
 
