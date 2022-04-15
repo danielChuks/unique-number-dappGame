@@ -1,5 +1,5 @@
 import React from "react";
-import HomeView from "../components/contents/FirstContent";
+import HomeView from "../components/homeDisplay/FirstContent";
 import { useState, useEffect } from "react";
 
 

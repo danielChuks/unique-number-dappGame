@@ -11,7 +11,7 @@ const Navbar = () => {
                         <h1 className='brand'> Daemon </h1> 
                     </Link>
 
-                    <Link to='/daemon' style={{paddingRight: 18, textDecoration: 'none'}}>
+                    <Link to='/information' style={{paddingRight: 18, textDecoration: 'none'}}>
                         <button className='navButton btn btn-outline-success d-flex justify-content-right mt-3'>{'Play Daemon Game '}</button> 
                     </Link>
                 </div>

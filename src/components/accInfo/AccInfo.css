@@ -1,0 +1,16 @@
+.accDisplay{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.area-view{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.submit{
+    margin-left: 210px;
+}

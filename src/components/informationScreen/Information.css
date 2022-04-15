@@ -1,0 +1,15 @@
+.display{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonDiv{
+    display:flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.buttonStyle{
+    margin-left: 30px;
+}
