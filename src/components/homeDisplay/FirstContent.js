@@ -2,7 +2,7 @@ import React from 'react'
 import './FirstContent.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Row} from 'react-bootstrap';
-import image from './images/baner.jpg'
+import image from './images/algo.jpg'
 import { Aminations } from '../designComponent/Amination';
 
 const HomeView = () => {

@@ -1,5 +1,10 @@
 .layout{
-    margin-top: 200px;
+    margin-top: 220px;
+}
+.errorDisplay{
+    display: flex;
+    justify-content: center;
+    margin-top: 220px;
 }
 
 h4{

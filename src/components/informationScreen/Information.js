@@ -9,8 +9,8 @@ const Information = () => {
                 <h1 className="content">How would you like to play </h1>
             </div>
             <div className="buttonDiv">
-                <Link to='/ctc-info'><button className="btn btn-success py-3 button"> Create a new game</button></Link>
-                <Link to='/acc-info'><button className="btn btn-success py-3 buttonStyle">Join existing game</button></Link>
+                <Link to='/ctc-info'><button className="btn btn-success py-3 button grow"> Create a new game</button></Link>
+                <Link to='/acc-info'><button className="btn btn-success py-3 buttonStyle grow">Join existing game</button></Link>
             </div>
         </>
 

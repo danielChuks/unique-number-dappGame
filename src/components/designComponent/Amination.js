@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Amination.css'
 
-const amination = 'Get the Unique number and Win...'
+const amination = 'In The Real World Ghot Scares You but in the daemon game Ghost makes you rich'
 
 export const Aminations = () => {
 
@@ -31,8 +31,8 @@ export const Aminations = () => {
   return (
     <div>
         <span>
-        <h3 className='text-dark text-uppercase blink-cursor'>      {typeAmination}
-        </h3> 
+        <h6 className='text-dark text-uppercase blink-cursor'>{typeAmination}
+        </h6> 
         </span>{''}
     </div>
   )

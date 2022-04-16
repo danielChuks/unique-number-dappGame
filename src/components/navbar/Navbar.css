@@ -13,5 +13,5 @@
 
 .navButton{
     margin-right: 100px;
-    animation: blink 1s step-start infinite;
+    /* animation: blink 1s step-start infinite; */
 }

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const CtcInfo = () =>{
     return(
         <>
-            <div>
+            <div className='body'>
             <div className='ctcDisplay'>
                 <h3 className=''>Create a contract</h3>
                 </div>
@@ -19,7 +19,7 @@ const CtcInfo = () =>{
                         <textarea className="form-control" id="" rows="3"></textarea>
                         <label for="">Enter Contract Address</label>
                         <textarea className="form-control" id="" rows="3"></textarea>
-                        <Link to='/daemon' ><button className='btn btn-lg btn-success mt-3 submit'>Submit</button></Link> 
+                        <Link to='/daemon' ><button className='btn btn-lg btn-success mt-3 submit grow'>Submit</button></Link> 
                     </div>
 
                 </div>     

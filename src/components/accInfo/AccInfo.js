@@ -17,7 +17,7 @@ const AccInfo = () => {
                         <textarea className="form-control" id="" rows="3"></textarea>
                         <label for="">Enter Contract Address</label>
                         <textarea className="form-control" id="" rows="3"></textarea>
-                        <Link to='/daemon' ><button className='btn btn-lg btn-success mt-3 submit'>Submit</button></Link> 
+                        <Link to='/daemon' ><button className='btn btn-lg btn-success mt-3 submit grow'>Submit</button></Link> 
                     </div>
 
                 </div>      

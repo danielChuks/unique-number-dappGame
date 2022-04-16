@@ -1,3 +1,7 @@
+.body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .ctcDisplay{
     margin-top: 150px;
     display: flex;
@@ -14,3 +18,4 @@
 .submit{
     margin-left: 210px;
 }
+

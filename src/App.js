@@ -8,6 +8,7 @@ import Daemon from './pages/DaemonGame';
 import Information from './components/informationScreen/Information';
 import AccInfo from './components/accInfo/AccInfo';
 import CtcInfo from './components/ctcInfo/CtcInfo';
+import Loading from './components/loadingScreen/Loading'
 
 
 function App ({ reach, reachBackend }){
@@ -20,6 +21,7 @@ function App ({ reach, reachBackend }){
                 <Route path='/information' element= {<Information/>}> </Route>
                 <Route path='acc-info' element= {<AccInfo />}></Route>
                 <Route path='ctc-info' element={<CtcInfo/>}></Route>
+                <Route path='loading' element={<Loading/>}></Route>
                 <Route path='/daemon' element={<Daemon reach={reach} reachBackend={ reachBackend }/>}></Route>
                 <Route path='*' element={<Error />}></Route>
             </Routes> 
