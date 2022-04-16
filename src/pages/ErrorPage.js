@@ -6,7 +6,7 @@ const Error = () => {
     return(
         <>
             <div className="errorDisplay">
-                <h5>{'404 ERROR PAGE NOT FOUND '}</h5>
+                <h5>{'404 ERROR PAGE NOT FOUND'}</h5>
             </div>
         </>
     )

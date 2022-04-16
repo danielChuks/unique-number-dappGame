@@ -14,14 +14,11 @@ const CtcInfo = () =>{
                 <div className='ctc-area-view '>
                     <div className="w-30">
                         <label for="">Enter Your Name</label>
-                        <input type="email" className="form-control" id="" placeholder=""/>
+                        <input type="name" className="form-control" id="" placeholder=""/>
                         <label for="">Include Your Wager </label>
                         <textarea className="form-control" id="" rows="3"></textarea>
-                        <label for="">Enter Contract Address</label>
-                        <textarea className="form-control" id="" rows="3"></textarea>
-                        <Link to='/daemon' ><button className='btn btn-lg btn-success mt-3 submit grow'>Submit</button></Link> 
+                        <Link to='/daemon' ><button className='btn btn-lg btn-success mt-3 grow'>Submit</button></Link> 
                     </div>
-
                 </div>     
             </div>
         </>

@@ -1,12 +1,13 @@
 import React from "react";
-import './Loading.css'
+import './Loading.css';
 
 
 
-const Loading = () => {
+const Loading = ({ isLoading }) => {
+    const loadContainerClassName = isLoading ? 'load-container' : 'hide'
     return(
         <>
-            <div className='load-container'>
+            <div className={loadContainerClassName}>
                 <div className="load"></div>
             </div>
         </>

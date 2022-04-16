@@ -6,10 +6,10 @@ import './Card.css'
 
 const Card = () => {
     return (
-        <div className='view'>
+        <div className='Cards'>
          {  
              IMAGES && IMAGES.map((item) => 
-                 <div  className='br3 pa3 ma3 grow shadow-5 pointer size' key={item.id}>
+                 <div  className='br3 pa3 ma3 grow shadow-5 pointer size'  key={item.id}>
                     <img src={item.image} height='275' alt='display'/>  
                  </div>
              )

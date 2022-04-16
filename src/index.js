@@ -7,6 +7,8 @@ import 'tachyons'
 import { ALGO_MyAlgoConnect as MyAlgoConnect } from '@reach-sh/stdlib';
 import * as reachBackend from './build/index.main.mjs';
 import {loadStdlib} from '@reach-sh/stdlib';
+import { Provider } from 'react-redux';
+import store from '../src/redux/store'
 
 const reach = loadStdlib('ALGO');
 reach.setWalletFallback(reach.walletFallback({providerEnv: 'TestNet', MyAlgoConnect }));
@@ -14,7 +16,9 @@ reach.setWalletFallback(reach.walletFallback({providerEnv: 'TestNet', MyAlgoConn
 
 ReactDOM.render(
   <React.StrictMode>
-    <App reach={reach} reachBackend={reachBackend}/>
+    <Provider store={store}>
+      <App reach={reach} reachBackend={reachBackend}/>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
