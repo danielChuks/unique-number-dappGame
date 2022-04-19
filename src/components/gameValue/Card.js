@@ -4,17 +4,36 @@ import './Card.css'
 
 
 
-const Card = () => {
+const Card = ({handleSelect, cardOrder}) => {
+    const generateCards = () => {
+        let cards = [];
+
+        for (let order of cardOrder) {
+            cards.push(
+                <div  className='br3 pa3 ma3 grow shadow-5 pointer size'  key={order}>
+                        <img 
+                            src={IMAGES[order].image} 
+                            height='275' 
+                            alt='display'
+                            onClick = {
+                                () => handleSelect(order)
+                            }    
+                    />  
+                </div>
+            )
+        }
+
+        return cards
+    }
     return (
-        <div className='Cards'>
-         {  
-             IMAGES && IMAGES.map((item) => 
-                 <div  className='br3 pa3 ma3 grow shadow-5 pointer size'  key={item.id}>
-                    <img src={item.image} height='275' alt='display'/>  
-                 </div>
-             )
-         }  
-        </div>
+        <>
+
+            <div className='Cards'>
+                {
+                    generateCards()
+                }
+            </div>
+        </>
     )
 }
 export default Card;

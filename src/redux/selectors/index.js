@@ -13,7 +13,15 @@ const selectReach = (state) => (state.appState.reach);
 
 const selectReachBackend = (state) => (state.appState.reachBackend);
 
+const selectWager = (state) => (state.appState.wager);
 
+const selectPromise = (state) => (state.appState.promise);
+
+const selectCurrentPlayer = (state) => (state.appState.currentPlayer);
+
+const selectIsToPlay = (state) => (state.appState.isToPlay);
+
+const selectConnectedWithMnemonic = (state) => (state.appState.connectedWithMnemonic);
 
 export default {
     selectAccount,
@@ -21,5 +29,10 @@ export default {
     selectPlayerCard,
     selectOpponentCard,
     selectReach,
-    selectReachBackend
+    selectReachBackend,
+    selectWager,
+    selectPromise,
+    selectCurrentPlayer,
+    selectIsToPlay,
+    selectConnectedWithMnemonic,
 };

@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import './CtcInfo.css' 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { updateWager } from "../../redux/slices";
 
 
+const CtcInfo = () => {
+    const [wager, setWager] = useState(0);
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
 
-const CtcInfo = () =>{
+    const handleChange = (event) => {
+        setWager(event.target.value);
+    }
+    
+    const handleSubmit = () => {
+        dispatch(updateWager(wager));
+        navigate('/contract-created');
+    }
+
     return(
         <>
             <div className='body'>
@@ -16,8 +30,8 @@ const CtcInfo = () =>{
                         <label for="">Enter Your Name</label>
                         <input type="name" className="form-control" id="" placeholder=""/>
                         <label for="">Include Your Wager </label>
-                        <textarea className="form-control" id="" rows="3"></textarea>
-                        <Link to='/daemon' ><button className='btn btn-lg btn-success mt-3 grow'>Submit</button></Link> 
+                        <input type='number' className="form-control" id="wager" value={wager} onChange={handleChange}/>
+                        <button className='btn btn-lg btn-success mt-3 grow' onClick={handleSubmit}>Submit</button>
                     </div>
                 </div>     
             </div>

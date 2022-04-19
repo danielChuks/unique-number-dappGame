@@ -9,8 +9,14 @@ export const gameStateSlice = createSlice({
         playerCard: 0,
         opponentCard: 0,
         reach: '{}',
-        reachBackend: '{}'
-
+        reachBackend: '{}',
+        wager: 0,
+        promise: {
+            resolve: {}
+        },
+        currentPlayer: 'KLAUS',
+        isToPlay: false,
+        connectedWithMnemonic: false,
     },
 
     reducers: {
@@ -32,6 +38,21 @@ export const gameStateSlice = createSlice({
         },
         updateReachBackend: (state, action)  =>{
             state.reachBackend = (action.payload);
+        },
+        updateWager: (state, action) => {
+            state.wager = action.payload;
+        },
+        updatePromise: (state, action) => {
+            state.promise.resolve = action.payload;
+        },
+        updateCurrentPlayer: (state, action) => {
+            state.currentPlayer = action.payload;
+        },
+        updateIsToPlay: (state, action) => {
+            state.isToPlay = action.payload;
+        },
+        updateConnectedWithMnemonic: (state, action) => {
+            state.connectedWithMnemonic = action.payload;
         }
     }
 
@@ -47,7 +68,12 @@ export const {
     updatePlayerCard,
     updateOpponenCard,
     updateReach,
-    updateReachBackend
+    updateReachBackend,
+    updateWager,
+    updatePromise,
+    updateCurrentPlayer,
+    updateIsToPlay,
+    updateConnectedWithMnemonic,
 } = gameStateSlice.actions;
 
 export default gameStateSlice.reducer;

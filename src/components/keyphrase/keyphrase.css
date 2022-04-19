@@ -1,0 +1,15 @@
+.accDisplay{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+
+.area-view{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+

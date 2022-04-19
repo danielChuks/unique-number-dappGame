@@ -13,7 +13,6 @@ import store from '../src/redux/store'
 const reach = loadStdlib('ALGO');
 reach.setWalletFallback(reach.walletFallback({providerEnv: 'TestNet', MyAlgoConnect }));
 
-
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

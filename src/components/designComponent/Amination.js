@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Amination.css'
 
-const amination = 'In The Real World Ghot Scares You but in the daemon game Ghost makes you rich'
+const amination = 'In The Real World Ghost Scares You but in the daemon game Ghost makes you rich'
 
 export const Aminations = () => {
 
