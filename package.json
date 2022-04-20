@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@reach-sh/stdlib": "^0.1.10-rc.0",
+    "@reach-sh/stdlib": "^0.1.10-rc.1",
     "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
