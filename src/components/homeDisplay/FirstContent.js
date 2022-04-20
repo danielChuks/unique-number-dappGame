@@ -12,7 +12,7 @@ const HomeView = () => {
           <Row>
           <div>
                 <div className='d-flex justify-content-center text-warning mt-5'>
-                   <h6>
+                   <h6 className='text-uppercase'>
                       {`Welcome to the the daemon unique number game, dont be scared we keep you anonymous. the game is simple get our unqiue number and win. `}  
                   </h6>
                </div>
