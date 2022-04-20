@@ -22,7 +22,7 @@ const HomeView = () => {
         </Container>
         <Container>
         <Row>
-            <div className='d-flex justify-content-center mt-5 mx-auto'>
+            <div className='d-flex justify-content-center mt-5 mx-auto text-light'>
                   <p>{`Welcome to the the daemon unique number game, dont be scared we keep you anonymous. the game is simple get our unqiue number and win. `} </p>
             </div>
         </Row>
