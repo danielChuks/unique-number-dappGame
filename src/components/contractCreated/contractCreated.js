@@ -30,28 +30,43 @@ const ContractCreated = () => {
             })
         }
 
+        // const viewResult = (result) => {
+        //     if (result === 0) {
+        //         if (currentPlayer === "Klaus") {
+        //             navigate('/win');
+        //         }
+        //         else {
+        //             navigate('/lose');
+        //         }
+        //     }
+        //     else if (result == 1) {
+        //         alert("It is a draw! Playing another round to determine winner.")
+        //     }
+        //     else if (result == 2){
+        //         if (currentPlayer === "Klaus") {
+        //             navigate('/lose');
+        //         }
+        //         else {
+        //             navigate('/win');
+        //         }
+        //     }
+        //     else {
+        //         alert(result)
+        //     }
+        // }
+
         const viewResult = (result) => {
-            if (result === 0) {
-                if (currentPlayer === "Klaus") {
-                    navigate('/win');
-                }
-                else {
-                    navigate('/lose');
-                }
+            if (result == 0) {
+                navigate('/win');
             }
             else if (result == 1) {
-                alert("It is a draw! Playing another round to determine winner.")
+                alert("It is a draw! Playing another round to determine winner.");
             }
             else if (result == 2){
-                if (currentPlayer === "Klaus") {
-                    navigate('/lose');
-                }
-                else {
-                    navigate('/win');
-                }
+                navigate('/lose');
             }
             else {
-                alert(result)
+                alert(result);
             }
         }
 
@@ -86,9 +101,9 @@ const ContractCreated = () => {
     return (
         <>
             <div className='accDisplay'>
-                <h3 className=''>Give the following contract information to the second player</h3>
+                <h3 className='text-warning'>Give the following contract information to the second player</h3>
             </div>
-            <div className='area-view '>
+            <div className='area-view text-warning'>
                 <div className="w-30">
                 
                     <label for="">Contract Address</label>

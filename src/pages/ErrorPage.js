@@ -5,7 +5,7 @@ import './Pages.css'
 const Error = () => {
     return(
         <>
-            <div className="errorDisplay">
+            <div className="errorDisplay text-warning">
                 <h5>{'404 ERROR PAGE NOT FOUND'}</h5>
             </div>
         </>

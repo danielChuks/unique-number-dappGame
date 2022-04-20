@@ -37,30 +37,46 @@ const AccInfo = () => {
         })
     }
 
+    // const viewResult = (result) => {
+    //     if (result == 0) {
+    //         if (currentPlayer === "Klaus") {
+    //             navigate('/win');
+    //         }
+    //         else {
+    //             navigate('/lose');
+    //         }
+    //     }
+    //     else if (result == 1) {
+    //         alert("It is a draw! Playing another round to determine winner.")
+    //     }
+    //     else if (result == 2){
+    //         if (currentPlayer === "Klaus") {
+    //             navigate('/win');
+    //         }
+    //         else {
+    //             navigate('/lose');
+    //         }
+    //     }
+    //     else {
+    //         alert(result);
+    //     }
+    // }
+
     const viewResult = (result) => {
         if (result == 0) {
-            if (currentPlayer === "Klaus") {
-                navigate('/lose');
-            }
-            else {
-                navigate('/win');
-            }
+            navigate('/lose');
         }
         else if (result == 1) {
-            alert("It is a draw! Playing another round to determine winner.")
+            alert("It is a draw! Playing another round to determine winner.");
         }
         else if (result == 2){
-            if (currentPlayer === "Klaus") {
-                navigate('/win');
-            }
-            else {
-                navigate('/lose');
-            }
+            navigate('/win');
         }
         else {
             alert(result);
         }
     }
+
 
     const onSubmit = async () => {
         try {
@@ -89,10 +105,10 @@ const AccInfo = () => {
 
     return (
         <>
-            <div className='accDisplay'>
+            <div className='accDisplay text-warning'>
                 <h3 className=''>Enter your contract information</h3>
             </div>
-            <div className='area-view '>
+            <div className='area-view text-warning'>
                 <div className="w-30">
                 
                     <label for="">Enter Contract Address</label>
@@ -111,7 +127,7 @@ const AccInfo = () => {
                     }
                     
 
-                    <button className='btn btn-success mt-3 grow' onClick={onSubmit}>Submit</button>
+                    <button className='btn btn-warning mt-3 grow' onClick={onSubmit}>Submit</button>
                 </div>
 
             </div>

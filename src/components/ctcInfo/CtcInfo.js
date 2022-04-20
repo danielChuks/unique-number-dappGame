@@ -21,17 +21,15 @@ const CtcInfo = () => {
 
     return(
         <>
-            <div className='body'>
+            <div className='body text-warning'>
             <div className='ctcDisplay'>
                 <h3 className=''>Create a contract</h3>
                 </div>
                 <div className='ctc-area-view '>
                     <div className="w-30">
-                        <label for="">Enter Your Name</label>
-                        <input type="name" className="form-control" id="" placeholder=""/>
                         <label for="">Include Your Wager </label>
                         <input type='number' className="form-control" id="wager" value={wager} onChange={handleChange}/>
-                        <button className='btn btn-lg btn-success mt-3 grow' onClick={handleSubmit}>Submit</button>
+                        <button className='btn btn-lg btn-warning mt-3 grow' onClick={handleSubmit}>Submit</button>
                     </div>
                 </div>     
             </div>

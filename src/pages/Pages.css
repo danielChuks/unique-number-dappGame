@@ -1,15 +1,30 @@
 .layout{
-    margin-top: 220px;
+    margin-top: 130px;
+    background-color: black;
 }
 .errorDisplay{
     display: flex;
     justify-content: center;
     margin-top: 220px;
+    background-color: black;
+}
+
+.errorDisplay1{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    background-color: black;
 }
 
 h4{
     text-align: center;
     padding-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.interact{
+    display: flex;
+    justify-content: center;
     animation: blink 2s step-start infinite;
     font-family: 'Courier New', Courier, monospace;
 }

@@ -1,10 +1,11 @@
 import React from "react";
+import './WinLose.css'
 
 
 const WinerUpdate = () =>{
     return(
-        <div>
-            <h1>You win</h1>
+        <div className="win text-warning">
+            <h1>You found Ghost You Won !!!</h1>
         </div>
     )
 }

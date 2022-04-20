@@ -3,6 +3,7 @@
     justify-content: space-between;
     position: fixed;
     font-family: 'Courier New', Courier, monospace;
+    border: solid rgba(164, 159, 58, 0.703) 1px;
 }
 
 .brand{

@@ -34,10 +34,10 @@ const Mnemonic = () => {
 
     return (
         <>
-            <div className='accDisplay'>
+            <div className='accDisplay text-warning'>
                 <h3 className=''>Enter your Mnemonic Key Phrase</h3>
             </div>
-            <div className='area-view '>
+            <div className='area-view text-warning'>
                 <div className="w-30">
                 
                     <label for="">Mnemonic Phrase</label>
@@ -56,7 +56,7 @@ const Mnemonic = () => {
                     }
                     
 
-                    <button className='btn btn-success mt-3 grow' onClick={onSubmit}>Submit</button>
+                    <button className='btn btn-warning mt-3 grow' onClick={onSubmit}>Submit</button>
                 </div>
 
             </div>

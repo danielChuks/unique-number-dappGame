@@ -4,11 +4,11 @@ import './Card.css'
 
 
 
-const Card = ({handleSelect, cardOrder}) => {
+const Card = ({handleSelect, cardOrder, valueOrder}) => {
     const generateCards = () => {
         let cards = [];
 
-        for (let order of cardOrder) {
+        cardOrder.forEach((order, index) => {
             cards.push(
                 <div  className='br3 pa3 ma3 grow shadow-5 pointer size'  key={order}>
                         <img 
@@ -16,12 +16,12 @@ const Card = ({handleSelect, cardOrder}) => {
                             height='275' 
                             alt='display'
                             onClick = {
-                                () => handleSelect(order)
+                                () => handleSelect(valueOrder[index])
                             }    
                     />  
                 </div>
             )
-        }
+        })
 
         return cards
     }

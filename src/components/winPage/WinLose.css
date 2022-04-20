@@ -1,0 +1,15 @@
+.win{
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+    font-family: 'Courier New', Courier, monospace;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.lose{
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+    font-family: 'Courier New', Courier, monospace;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}

@@ -12,7 +12,9 @@ import { updateIsToPlay, updatePromise } from "../redux/slices";
 
 const DaemonGame = () => {
     const CARDS = ['Ghost', 'Witch', 'Mouse', 'Pawn'];
-    const [cardOrder, setCardOrder] = useState([0, 1, 2, 3])
+    const [cardOrder, setCardOrder] = useState([0, 1, 2, 3]);
+    const [valueOrder, setValueOrder] = useState([0, 1, 2, 3]);
+
     const promise = useSelector(selectors.selectPromise);
     const dispatch = useDispatch();
     const isToPlay = useSelector(selectors.selectIsToPlay);
@@ -39,7 +41,7 @@ const DaemonGame = () => {
         }
     };
 
-    const shuffleCards = () => {
+    const shuffleNumbers = () => {
         let first = Math.floor(Math.random() * 3);
         let second = first;
 
@@ -55,23 +57,30 @@ const DaemonGame = () => {
 
         let fourth = 6 - (first + second + third);
 
-        setCardOrder([first, second, third, fourth]);
-        console.log([first, second, third, fourth])
+        return [first, second,, third, fourth];
+    };
+
+
+    const shuffleCards = () => {
+        setCardOrder(shuffleNumbers());
+        setValueOrder(shuffleNumbers());
     }
 
+    
     return(
         <>
-            <div className="layout">
+            <div className="layout text-warning">
                 <h4>{'Welcome to the Daemon game.'}</h4>
-                <p>
-                    { isToPlay? 'It is your turn, pick a card' : 'Hold on...' }
-                </p>
-                <p>
+                <div className="pt-3 interact">
+                   <h5>{ isToPlay? 'It is your turn, pick a card' : 'Hold on...' }</h5> 
+                </div>
+                <div className="pt-3 interact">
                     { displayCard? `You played the card ${cardPlayed}` : '' }
-                </p>
+                </div>
                 <Card 
                     handleSelect={handleGamePlay}
                     cardOrder={cardOrder}
+                    valueOrder={valueOrder}
                 />
             </div>
         </>

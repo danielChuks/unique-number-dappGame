@@ -6,6 +6,7 @@
 .size{
     height: 300px;
     width: 300px;
+    background-color: white
 };
 
 @media (min-width: 576px) { 
