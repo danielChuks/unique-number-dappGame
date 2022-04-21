@@ -1,4 +1,4 @@
-function informTimeout() {
+function informTimeOut() {
     alert("Time is up")
 }
 
@@ -7,5 +7,5 @@ function informDraw () {
 }
 
 export default {
-    informTimeout, informDraw
+    informTimeOut, informDraw
 }
