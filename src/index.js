@@ -11,7 +11,7 @@ import { Provider } from 'react-redux';
 import store from '../src/redux/store'
 
 const reach = loadStdlib('ALGO');
-reach.setWalletFallback(reach.walletFallback({providerEnv: 'TestNet', MyAlgoConnect }));
+reach.setWalletFallback(reach.walletFallback({providerEnv: 'MainNet', MyAlgoConnect }));
 
 ReactDOM.render(
   <React.StrictMode>

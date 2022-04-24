@@ -12,8 +12,8 @@ import { updateIsToPlay, updatePromise } from "../redux/slices";
 
 const DaemonGame = () => {
     const CARDS = ['Ghost', 'Witch', 'Mouse', 'Pawn'];
-    const [cardOrder, setCardOrder] = useState([0, 1, 2, 3]);
-    const [valueOrder, setValueOrder] = useState([0, 1, 2, 3]);
+    const [cardOrder, setCardOrder] = useState(shuffleNumbers());
+    const [valueOrder, setValueOrder] = useState(shuffleNumbers());
 
     const promise = useSelector(selectors.selectPromise);
     const dispatch = useDispatch();
@@ -41,7 +41,7 @@ const DaemonGame = () => {
         }
     };
 
-    const shuffleNumbers = () => {
+    function shuffleNumbers () {
         let first = Math.floor(Math.random() * 3);
         let second = first;
 
@@ -57,7 +57,7 @@ const DaemonGame = () => {
 
         let fourth = 6 - (first + second + third);
 
-        return [first, second,, third, fourth];
+        return [first, second, third, fourth];
     };
 
 
