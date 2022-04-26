@@ -1,4 +1,4 @@
-#WORKSHOP UNIQUE NUMBER GAME
+# WORKSHOP UNIQUE NUMBER GAME
 
 In this workshop i would work you through the details of my submitted Hack game "unique number game".
 
