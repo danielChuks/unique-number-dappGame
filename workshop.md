@@ -46,4 +46,10 @@ You should also write your own answers in your Reach program (index.rsh) using a
       Express rule of the game are outlined to the players and what they need too win is clear.
 
       The funds change ownership when there is a winner 
+      
+It actually okay if your answers differs from mine, if you are confident your answers are correct you can proceed with this workshop.
+
+# 2.0.2 Data Definition
+
+In the next context of this workshop, we would be going through thorogh definition of data types equivalents of the values we used in our answers from the previous section. Also, in this step we'll be deciding what functions our participants will have.
 
