@@ -88,7 +88,7 @@ It's time to see our answers!
 ```
 We are going to represent the cost of the wager and the deadline with UInt (unsigned integer). Klaus will set these two values after creating the contract. There is a function that gives Elena the choice of accepting or rejecting the wager set by Klaus.
 
-# 2.0.3 Communication consruction.
+# 2.0.3 Communication construction.
 
 Now we can design the structure of communication of our application. Try to write this part considering how the process of creator setting the price and player playing the move would go.
 
