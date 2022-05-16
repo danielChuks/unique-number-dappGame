@@ -20,7 +20,7 @@ It best to start off by initialzing your reach program by runing the following:
   $.../reach init
 ```
 
-# 2.0.1 Problem Analysis
+# 2.0.1 Problem Analytics
 
 The first step to implementing any application or provide any solution to a problem is to do what we call problem analytics.
 This problem analyitics entails defining the general scope of the issue and how we intend to sove the problem this problem with our application.
