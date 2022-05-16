@@ -198,7 +198,7 @@ In addition to our assertion we define our loop like this:
       commit();
 ```
 
-# In Additions
+# In Addition
 
 So far, our code works  fine but there are some points we need to improve.
 One improvement is to enforce a timeout limit on each player to make sure that they don't take too long to play their move or worse, abandon a game midway. Of course, we will need a means to inform both players when a timeout occurs. For that, we will define a function thus:
