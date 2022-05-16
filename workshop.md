@@ -217,7 +217,6 @@ To implement the timeout, we will use the ```deadline``` value that Klaus create
 The timeout will be enforced when - 
 
 * Klaus makes picks his card
-* 
 ```javascript
      // Klaus specifies the wager and deadline and pays the wager into the contract.
   Klaus.only(() => {
@@ -254,7 +253,7 @@ We can inprove this code by making sure every attempt by Elena to know Klaus han
 
 ```
 
-//This code ensures every attempt by Elena to know Klaus' hand would be rejected.
+//This code ensures every attempt by Elena to know Klaus' card would be rejected.
  ```javascript
       unknowable(Elena, Klaus(_cardsKlaus, _saltKlaus));
 ```
@@ -269,7 +268,7 @@ We can inprove this code by making sure every attempt by Elena to know Klaus han
       commit();
 ```
 
-In addition we would then include the salt to the card of Klaus to ensure his card is protected from any malicious mode of Elena.
+In addition we would then include the salt to the card of Klaus to ensure his card is protected from any malicious attack of Elena.
 
 ```javascript
     // We publish Klaus' hand and the salt.
