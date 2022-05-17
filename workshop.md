@@ -271,7 +271,7 @@ We can improve this code by making sure every attempt by Elena to know Klaus car
 In addition we would then include the salt to the card of Klaus to ensure his card is protected from any malicious attack of Elena.
 
 ```javascript
-    // We publish Klaus' hand and the salt.
+    // We publish Klaus' card and the salt.
       Klaus.only(() => {
           const saltKlaus = declassify(_saltKlaus);
           const cardsKlaus =declassify(_cardsKlaus);
