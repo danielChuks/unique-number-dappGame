@@ -2,7 +2,7 @@
 
 In this workshop i would work you through the details of my submitted Hack game "unique number game".
 
-This workshop, takes into consideration of the fact that you have indeed complete the reach tutorial.
+This workshop, takes into consideration the fact that you have indeed complete the reach tutorial.
 
 We assume that you’ll go through this workshop in a directory named `~/reach/workshop-unique-number-dappgame:`
 ```bash
@@ -15,7 +15,7 @@ And that you have a copy of Reach installed in ~/reach so you can write
 ```
 This should run reach successfuly
 
-It best to start off by initialzing your reach program by runing the following:
+It is best to start off by initialzing your reach program by runing the following:
 ```bash
   $.../reach init
 ```
@@ -23,7 +23,7 @@ It best to start off by initialzing your reach program by runing the following:
 # 2.0.1 Problem Analytics
 
 The first step to implementing any application or provide any solution to a problem is to do what we call problem analytics.
-This problem analyitics entails defining the general scope of the issue and how we intend to sove the problem this problem with our application.
+This problem analyitics entails defining the general scope of the issue and how we intend to solve the problem with our application.
 You should also write your own answers in your Reach program (index.rsh) using a comment. /* Remember comments are written like this. */
 
 
@@ -37,9 +37,9 @@ You should also write your own answers in your Reach program (index.rsh) using a
 
 **Stop!** Write down the problem description as a comment 
 
-      My game involves two player: one player starts the game another enact or join the game 
+      My game involves two player: one player starts the game another joins the game 
 
-      Creator of the game stipulate the amount or price they want to set for a each round of the game and the other player accept the said amount staked by the creator
+      Creator of the game stipulate the amount or price they want to set for each round of the game and the other player accept the said amount staked by the creator
 
       Creator won't know any other information about the game so also the other player.
 
@@ -51,7 +51,7 @@ It actually okay if your answers differs from mine, if you are confident your an
 
 # 2.0.2 Data Definition
 
-In the next context of this workshop, we would be going through thorogh definition of data types equivalents of the values we used in our answers from the previous section. Also, in this step we'll be deciding what functions our participants will have.
+In the next context of this workshop, we would be going through definition of data types equivalents of the values we used in our answers from the previous section. Also, in this step we'll be deciding what functions our participants will have.
 
    * What functions/ values does Klaus need to start the game?
    * What functions/ values do Elena need to end the game?
@@ -90,7 +90,7 @@ We are going to represent the cost of the wager and the deadline with UInt (unsi
 
 # 2.0.3 Communication construction.
 
-Now we can design the structure of communication of our application. Try to write this part considering how the process of creator setting the price and player playing the move would go.
+Now we can design the structure of communication of our application. Try to write this part considering the process of Klaus setting the price and Elena picking her number please note card in this context, represent numbers picked by both players so cards and numbers would be used interchangeably in this workshop.
 
 **Stop**
 
@@ -201,7 +201,7 @@ In addition to our assertion we define our loop like this:
 # In Addition
 
 So far, our code works  fine but there are some points we need to improve.
-One improvement is to enforce a timeout limit on each player to make sure that they don't take too long to play their move or worse, abandon a game midway. Of course, we will need a means to inform both players when a timeout occurs. For that, we will define a function thus:
+One improvement is to enforce a timeout limit on each player to make sure that they don't take too long to play their move or worse abandon a game midway. Of course, we will need a means to inform both players when a timeout occurs. For that, we will define a function thus:
 
 ```javascript
   const informTimeOut = () => {
@@ -237,7 +237,7 @@ The timeout will be enforced when -
       .timeout(relativeTime(deadline), () => closeTo(Klaus, informTimeOut));
 ```
 
-We can inprove this code by making sure every attempt by Elena to know Klaus hand is rejected:
+We can improve this code by making sure every attempt by Elena to know Klaus card is rejected:
 ```javascript  
   
       // Klaus makes his move picks his card and publishes it.
@@ -738,7 +738,7 @@ const AccInfo = () => {
 ```
 
 ## Discussion
-Please note that this workshop gives you the overview functionality of the code structure of unique number game i deccided to make it this way to give you that overview i believe strongly in code spliting and as such the code and file base of this project are some what lengthy and spilted  so if you would want to reproduce this exactly as i did you can go through the repo of this project.
+Please take into consideration that this workshop gives you the overview functionality with respect to code structure of unique number game i deccided to make it this way to give you that overview i believe strongly in code spliting and as such the code and file base of this project are some what lengthy and spilted  so if you would want to reproduce this exactly as it was created, you can go through the repo of this project.
 
 
 Congrats for making it to the end of the workshop. You succeeded in implementing the Unique number game to run on the blockchain all by yourself!
